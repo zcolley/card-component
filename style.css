@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+ul {
+  list-style: none;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Outfit', sans-serif;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.text-info,
+.img-container {
+  height: 30rem;
+  width: 20rem;
+}
+.img-container img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+  padding: 0 2rem;
+  text-transform: capitalize;
+}
+.text-info h3 {
+  margin: 1.2rem 0;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: lightgray;
+}
+.text-info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  margin-top: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+.text-info p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(190, 184, 184);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  /* letter-spacing: 2px; */
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1.2rem;
+}
+
+li:first-child {
+  font-size: 2rem;
+  margin-right: 1.3rem;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+  font-family: serif;
+}
+li:last-child {
+  font-size: 0.85rem;
+  text-decoration-line: line-through;
+  color: lightgray;
+}
+.btn {
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+.btn i {
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+.btn:active {
+  background-color: hsl(158, 44%, 23%);
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container {
+    height: 15rem;
+  }
+  .text-info {
+    height: 22rem;
+  }
+  .img-container img {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .text-info h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .text-info h3 {
+    font-size: 1.3rems;
+    margin-bottom: 0.4rem;
+  }
+  .text-info p {
+    font-size: 0.85rem;
+  }
+}
